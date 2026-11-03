@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E_DOCS — Buxgalteriya va Soliq Konsalting Xizmati</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0a0f1d',
+              card: '#131b2e',
+              blue: '#1e6bf1',
+              gold: '#e5a93c',
+              goldHover: '#d4931a'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0a0f1d;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #f3c669 0%, #e5a93c 50%, #d4931a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.1); opacity: 0.4; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .pulse-dot {
+      animation: pulse-ring 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-[#0a0f1d] text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950 min-h-screen flex flex-col justify-between">
+
+  <!-- TOP HEADER / NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-[#131b2e]/90 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo & Title -->
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 p-0.5 shadow-lg shadow-amber-500/10">
+          <div class="w-full h-full bg-[#0a0f1d] rounded-[10px] flex items-center justify-center">
+            <i class="fa-solid fa-file-invoice-dollar text-amber-400 text-xl"></i>
+          </div>
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-tight text-white flex items-center gap-1">
+            E<span class="text-amber-400">_</span>DOCS
+          </span>
+          <p class="text-[11px] text-slate-400 font-medium tracking-wide">BUXGALTERIYA KONSALTING XIZMATI</p>
+        </div>
+      </div>
+
+      <!-- Quick Action Bot Button -->
+      <div class="flex items-center space-x-3">
+        <a href="https://t.me/AESEDOCS_bot" target="_blank" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-4 py-2.5 rounded-xl font-semibold transition shadow-lg shadow-blue-600/20 text-sm">
+          <i class="fa-brands fa-telegram text-lg"></i>
+          <span class="hidden sm:inline">@AESEDOCS_bot</span>
+          <span class="sm:hidden">Bot</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden pt-16 pb-20 lg:py-24 bg-gradient-to-b from-[#131b2e] to-[#0a0f1d] border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-400 pulse-dot"></span>
+          Soliq va buxgalteriya masalalarida ishonchli hamkor
+        </div>
+        
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+          E_DOCS BUXGALTERIYA <br class="hidden sm:block"/>
+          <span class="gold-gradient-text">KONSALTING XIZMATI</span>
+        </h1>
+        
+        <p class="text-base sm:text-lg text-slate-300 mb-10 leading-relaxed">
+          Soliq hisobotlarini yuborish, soliq masalalari bo'yicha professional maslahat berish va buxgalteriya hisobini qonunchilikka to'liq muvofiq holda yuritish markazi.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="https://t.me/AESEDOCS_bot" target="_blank" class="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold rounded-xl shadow-xl shadow-amber-500/20 transition flex items-center justify-center gap-2.5 text-base">
+            <i class="fa-brands fa-telegram text-xl"></i>
+            <span>Bot orqali murojaat qilish</span>
+          </a>
+          <a href="tel:+998952027404" class="px-8 py-4 bg-[#131b2e] hover:bg-slate-800 text-white border border-slate-700 font-semibold rounded-xl transition flex items-center justify-center gap-2.5 text-base shadow-md">
+            <i class="fa-solid fa-phone text-amber-400 text-lg"></i>
+            <span>Ofis bilan bog'lanish</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue-600/10 blur-[120px] rounded-full pointer-events-none"></div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="py-20 bg-[#0a0f1d]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-3">Bizning Asosiy Xizmatlar</h2>
+        <p class="text-slate-400 text-sm sm:text-base">Tadbirkorlik va moliyaviy faoliyatingiz uchun kafolatlangan buxgalteriya xizmatlari</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-[#131b2e] border border-slate-800/80 rounded-2xl p-7 hover:border-amber-500/50 transition group shadow-lg">
+          <div class="w-14 h-14 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">Soliq hisobotlarini yuborish</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Barcha davriy va yillik soliq hamda moliyaviy hisobotlarni davlat organiga xatosiz yuborish.
+          </p>
+        </div>
+
+        <div class="bg-[#131b2e] border border-slate-800/80 rounded-2xl p-7 hover:border-amber-500/50 transition group shadow-lg">
+          <div class="w-14 h-14 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-calculator"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">Buxgalteriya xizmatlari</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Korxona va tadbirkorlar uchun 1C va tizimli to'liq buxgalteriya hisobini yuritish.
+          </p>
+        </div>
+
+        <div class="bg-[#131b2e] border border-slate-800/80 rounded-2xl p-7 hover:border-amber-500/50 transition group shadow-lg">
+          <div class="w-14 h-14 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-comments-dollar"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">Soliq bo'yicha maslahat</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Soliqlarni qonuniy optimallashtirish va jarima xavflarining oldini olish konsaltingi.
+          </p>
+        </div>
+
+        <div class="bg-[#131b2e] border border-slate-800/80 rounded-2xl p-7 hover:border-amber-500/50 transition group shadow-lg">
+          <div class="w-14 h-14 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-3">Qonunchilikka muvofiqlik</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            O'zR Davlat soliq qo'mitasi talablari va amaldagi qonunchilik normalariga 100% moslik.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICE CONTACTS & CALL/SMS SECTION -->
+  <section class="py-20 bg-[#131b2e]/50 border-t border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white flex items-center justify-center gap-3">
+          <i class="fa-solid fa-building text-amber-400"></i> Ofis Bilan Aloqa
+        </h2>
+        <p class="text-slate-400 text-sm mt-2">Tezkor qo'ng'iroq qilish va SMS yuborish imkoniyati</p>
+      </div>
+
+      <!-- Office Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 max-w-4xl mx-auto">
+        
+        <!-- Office Telegram Card (+998 95 202 74 04) -->
+        <div class="bg-[#0a0f1d] border border-slate-800 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:border-amber-500/40 transition shadow-md">
+          <div class="flex items-center space-x-4">
+            <div class="w-14 h-14 bg-blue-600/10 border border-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 text-2xl shrink-0">
+              <i class="fa-brands fa-telegram"></i>
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-lg">Ofis Telegram</h4>
+              <p class="text-amber-400 font-extrabold text-xl tracking-wide mt-0.5">+998 95 202 74 04</p>
+              <p class="text-slate-400 text-xs mt-1">Tezkor Telegram va murojaatlar</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <a href="https://t.me/+998952027404" target="_blank" class="flex-1 sm:flex-initial px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl transition flex items-center justify-center gap-1.5 shadow-md">
+              <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+            <a href="tel:+998952027404" class="px-3.5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition flex items-center justify-center gap-1">
+              <i class="fa-solid fa-phone"></i> Tel
+            </a>
+          </div>
+        </div>
+
+        <!-- Office Tel & SMS Card (+998 50 203 14 14) -->
+        <div class="bg-[#0a0f1d] border border-slate-800 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 hover:border-amber-500/40 transition shadow-md">
+          <div class="flex items-center space-x-4">
+            <div class="w-14 h-14 bg-amber-500/10 border border-amber-500/20 rounded-2xl flex items-center justify-center text-amber-400 text-2xl shrink-0">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div>
+              <h4 class="text-white font-bold text-lg">Ofis Tel va SMS</h4>
+              <p class="text-amber-400 font-extrabold text-xl tracking-wide mt-0.5">+998 50 203 14 14</p>
+              <p class="text-slate-400 text-xs mt-1">Markaziy operator va qo'ng'iroqlar</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 w-full sm:w-auto">
+            <a href="tel:+998502031414" class="flex-1 sm:flex-initial px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold rounded-xl transition flex items-center justify-center gap-2 shadow-md">
+              <i class="fa-solid fa-phone"></i> Tel
+            </a>
+            <a href="sms:+998502031414" class="flex-1 sm:flex-initial px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold rounded-xl transition flex items-center justify-center gap-2 shadow-md">
+              <i class="fa-solid fa-comment-sms"></i> SMS
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SPECIALISTS CONTACTS (4 NAFAK XODIM TO'LIQ) -->
+      <div class="max-w-7xl mx-auto">
+        <h3 class="text-xl font-bold text-white mb-8 text-center flex items-center justify-center gap-2">
+          <i class="fa-solid fa-user-tie text-amber-400"></i> Mas'ul Mutaxassislar
+        </h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          
+          <!-- Specialist 1: Bahtiyorjon -->
+          <div class="bg-[#0a0f1d] p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition shadow-lg group">
+            <div>
+              <div class="flex items-center space-x-3 mb-4">
+                <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 text-lg font-bold shrink-0 group-hover:scale-110 transition">
+                  <i class="fa-solid fa-user-gear"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-bold text-base">Bahtiyorjon</h4>
+                  <p class="text-xs text-slate-400 font-medium">Ofis menejeri</p>
+                </div>
+              </div>
+              <p class="text-amber-400 font-extrabold text-sm tracking-wide mb-5">+998 90 140 14 14</p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <a href="tel:+998901401414" class="py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-xl text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-phone"></i> Tel
+              </a>
+              <a href="sms:+998901401414" class="py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold rounded-xl text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-comment-sms"></i> SMS
+              </a>
+            </div>
+          </div>
+
+          <!-- Specialist 2: Elyorbek -->
+          <div class="bg-[#0a0f1d] p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition shadow-lg group">
+            <div>
+              <div class="flex items-center space-x-3 mb-4">
+                <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 text-lg font-bold shrink-0 group-hover:scale-110 transition">
+                  <i class="fa-solid fa-user-check"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-bold text-base">Elyorbek</h4>
+                  <p class="text-xs text-slate-400 font-medium">Soliq bo'yicha ekspert</p>
+                </div>
+              </div>
+              <p class="text-amber-400 font-extrabold text-sm tracking-wide mb-5">+998 90 149 01 05</p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <a href="tel:+998901490105" class="py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-xl text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-phone"></i> Tel
+              </a>
+              <a href="sms:+998901490105" class="py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold rounded-xl text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-comment-sms"></i> SMS
+              </a>
+            </div>
+          </div>
+
+          <!-- Specialist 3: Abdulatif -->
+          <div class="bg-[#0a0f1d] p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition shadow-lg group">
+            <div>
+              <div class="flex items-center space-x-3 mb-4">
+                <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 text-lg font-bold shrink-0 group-hover:scale-110 transition">
+                  <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-bold text-base">Abdulatif</h4>
+                  <p class="text-xs text-slate-400 font-medium">Bosh buxgalter</p>
+                </div>
+              </div>
+              <p class="text-amber-400 font-extrabold text-sm tracking-wide mb-5">+998 91 167 88 98</p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <a href="tel:+998911678898" class="py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-xl text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-phone"></i> Tel
+              </a>
+              <a href="sms:+998911678898" class="py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold rounded-xl text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-comment-sms"></i> SMS
+              </a>
+            </div>
+          </div>
+
+          <!-- Specialist 4: Ilhomjon -->
+          <div class="bg-[#0a0f1d] p-6 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-amber-500/40 transition shadow-lg group">
+            <div>
+              <div class="flex items-center space-x-3 mb-4">
+                <div class="w-12 h-12 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 text-lg font-bold shrink-0 group-hover:scale-110 transition">
+                  <i class="fa-solid fa-user-tag"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-bold text-base">Ilhomjon</h4>
+                  <p class="text-xs text-slate-400 font-medium">Konsultant</p>
+                </div>
+              </div>
+              <p class="text-amber-400 font-extrabold text-sm tracking-wide mb-5">+998 91 498 15 15</p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <a href="tel:+998914981515" class="py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-xl text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-phone"></i> Tel
+              </a>
+              <a href="sms:+998914981515" class="py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold rounded-xl text-center transition flex items-center justify-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-comment-sms"></i> SMS
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOCIAL NETWORKS SECTION -->
+  <section class="py-20 bg-[#0a0f1d]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">Ijtimoiy Tarmoqlarimiz</h2>
+        <p class="text-slate-400 text-sm">Bizning Telegram va Instagram sahifalarimizga a'zo bo'ling</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        
+        <!-- Telegram Card -->
+        <div class="bg-[#131b2e] p-8 rounded-3xl border border-slate-800 flex flex-col sm:flex-row items-center gap-6 hover:border-blue-500/40 transition shadow-lg">
+          <div class="w-32 h-32 bg-white p-3 rounded-2xl shadow-xl flex-shrink-0 flex flex-col items-center justify-center text-center">
+            <i class="fa-brands fa-telegram text-5xl text-blue-500 mb-1"></i>
+            <span class="text-[9px] font-bold text-slate-900 tracking-tighter">@E_DOCS_TAXHELPER</span>
+          </div>
+          <div class="text-center sm:text-left">
+            <div class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 text-xs font-bold rounded-md mb-2">Telegram Helper Bot</div>
+            <h3 class="text-xl font-bold text-white mb-2">@E_DOCS_TAXHELPER</h3>
+            <p class="text-slate-400 text-sm mb-4">Soliq va buxgalteriya bo'yicha bot orqali savol berish va xizmatlarga buyurtma berish.</p>
+            <a href="https://t.me/AESEDOCS_bot" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl text-sm transition shadow-md">
+              <span>Botga o'tish</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Instagram Card -->
+        <div class="bg-[#131b2e] p-8 rounded-3xl border border-slate-800 flex flex-col sm:flex-row items-center gap-6 hover:border-pink-500/40 transition shadow-lg">
+          <div class="w-32 h-32 bg-white p-3 rounded-2xl shadow-xl flex-shrink-0 flex flex-col items-center justify-center text-center">
+            <i class="fa-brands fa-instagram text-5xl text-pink-600 mb-1"></i>
+            <span class="text-[9px] font-bold text-slate-900 tracking-tighter">E_DOCS_TAXHELPER</span>
+          </div>
+          <div class="text-center sm:text-left">
+            <div class="inline-block px-3 py-1 bg-pink-500/10 text-pink-400 text-xs font-bold rounded-md mb-2">Instagram Sahifa</div>
+            <h3 class="text-xl font-bold text-white mb-2">E_DOCS_TAXHELPER</h3>
+            <p class="text-slate-400 text-sm mb-4">Instagram sahifamizda soliq yangiliklari va muhim buxgalteriya maslahatlari.</p>
+            <a href="https://instagram.com" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-500 hover:to-rose-500 text-white font-semibold rounded-xl text-sm transition shadow-md">
+              <span>Kuzatib borish</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#131b2e] border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="mb-2">© 2026 E_DOCS — Buxgalteriya Konsalting Xizmati. Barcha huquqlar himoyalangan.</p>
+      <p class="text-xs text-slate-600">Soliq hisobotlarini yuborish va soliq masalalari bo'yicha maslahat berish markazi</p>
+    </div>
+  </footer>
+
+</body>
+</html>
